@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website design</title>
+    <link rel="stylesheet" href="main.css">
+   
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar">
+        <h1 class="logo">NATURE</h1>
+        <ul class="nav-links">
+            <li><a href="index.html" class="ctn">Home</a></li>
+            <li><a href="rainforest.html" class="ctn">Rainforest</a></li>
+            <li><a href="grassland.html" class="ctn">Grassland</a></li>
+            <li><a href="desert.html" class="ctn">Desert</a></li>
+            <li><a href="ocean.html" class="ctn">Ocean</a></li>
+            <li><a href="tundra.html" class="ctn">Tundra</a></nav></li>
+        </ul>
+        <img src="menu-btn.png" alt="" class="menu-btn">
+    <header>
+     <div class="header-content">
+        <h2>A place to feel alive</h2>
+        <div class="line">
+            <h1>BIZZARE NATURE</h1>
+            <a href="gallery.html" class="ctn">Explore</a>
+        </div>
+     </div>
+    </header>
+    <!-- ==introductory photos-->
+    <section class="animals">
+        <div class="title">
+            <h1>WILDLIFE</h1>
+            <div class="line"></div></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="animals/kingfisher.jpg" alt="">
+                <h4>Kingfisher</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem animi qui rerum numquam, sequi velit, doloremque harum natus facere tempore, expedita sapiente totam earum ad mollitia. Similique autem aliquid nulla!</p>
+            </div>
+            <div class="col">
+                <img src="animals/bison.jpg" alt="">
+                <h4>Bison</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem animi qui rerum numquam, sequi velit, doloremque harum natus facere tempore, expedita sapiente totam earum ad mollitia. Similique autem aliquid nulla!</p>
+            </div>
+        </div>
+    </section>
+    <!--3rd section-->
+    <section class="nature">
+        <div class="nature-content">
+        <h1> Explore the Strange</h1>
+        <div class="line"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, perspiciatis. Nam fugiat, libero eaque nemo nesciunt iure rem voluptas nisi blanditiis eos deserunt necessitatibus voluptatibus rerum odit beatae quaerat quisquam?</p>
+        <a href="gallery.html" class="ctn">Let's Go</a>
+    </div>
+    </section>
+    <!--column image gallery-->
+    <section class="plants">
+        <div class="row">
+            <div class="col content-col">
+                <h1>Flora and Fauna</h1>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ut voluptatum omnis pariatur doloribus tempora, repudiandae vitae accusamus facilis vero! Rerum dolor optio, corporis iste libero quisquam ea</p>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="./flora/plant1.jpg" alt="">
+                    <img src="./flora/plant2.jpg" alt="">
+                    <img src="./flora/plant3.jpg" alt="">
+                    <img src="./flora/plant4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <section class="footer">
+        <p>Nature's beauty lies in its infinite diversity, where every landscape, creature, and phenomenon unveils a unique masterpiece.</p>
+    </section>
+    <!--the things that makes menu button work-->
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click', ()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>
